@@ -1,0 +1,135 @@
+{
+  "fleet": [
+    {
+      "id": "VEH-01",
+      "type": "Box truck",
+      "driver": "Rajesh Kumar",
+      "status": "en_route",
+      "status_label": "En route",
+      "current_location": "NH-48, near Vadodara",
+      "route": "Surat hub → Vadodara",
+      "load_pct": 78,
+      "capacity_kg": 3500,
+      "next_stop": "Vadodara delivery point",
+      "eta": "1h 10m"
+    },
+    {
+      "id": "VEH-02",
+      "type": "Container truck",
+      "driver": "Anil Mehta",
+      "status": "loading",
+      "status_label": "Loading",
+      "current_location": "Surat hub — Bay 4",
+      "route": "Surat hub → Chennai",
+      "load_pct": 40,
+      "capacity_kg": 16000,
+      "next_stop": "Departure scheduled",
+      "eta": "Departs in 2h"
+    },
+    {
+      "id": "VEH-03",
+      "type": "Delivery van",
+      "driver": "Priya Nair",
+      "status": "out_for_delivery",
+      "status_label": "Out for delivery",
+      "current_location": "Adajan, Surat",
+      "route": "Surat city — 14 stops",
+      "load_pct": 55,
+      "capacity_kg": 1200,
+      "next_stop": "Stop 6 of 14",
+      "eta": "On schedule"
+    },
+    {
+      "id": "VEH-04",
+      "type": "Two-wheeler",
+      "driver": "Sameer Shah",
+      "status": "idle",
+      "status_label": "Idle — available",
+      "current_location": "Surat hub",
+      "route": "Unassigned",
+      "load_pct": 0,
+      "capacity_kg": 25,
+      "next_stop": "Awaiting assignment",
+      "eta": "—"
+    },
+    {
+      "id": "VEH-05",
+      "type": "Box truck",
+      "driver": "Vikram Patel",
+      "status": "maintenance",
+      "status_label": "In maintenance",
+      "current_location": "Surat depot — service bay",
+      "route": "Out of service",
+      "load_pct": 0,
+      "capacity_kg": 3500,
+      "next_stop": "Service ETA Dec 09",
+      "eta": "—"
+    }
+  ],
+  "warehouses": [
+    {
+      "id": "WH-SUR",
+      "name": "Surat Distribution Center",
+      "location": "Sachin GIDC, Surat, GJ",
+      "capacity_sqft": 48000,
+      "used_pct": 72,
+      "staff_on_shift": 34,
+      "inbound_today": 218,
+      "outbound_today": 264,
+      "inventory": [
+        { "name": "Electronics",        "units": 4120, "pct": 84 },
+        { "name": "Textiles & apparel", "units": 6890, "pct": 67 },
+        { "name": "Packaged food",      "units": 2340, "pct": 45 },
+        { "name": "General merchandise","units": 5110, "pct": 71 }
+      ]
+    },
+    {
+      "id": "WH-MUM",
+      "name": "Mumbai Fulfilment Hub",
+      "location": "Bhiwandi, MH",
+      "capacity_sqft": 96000,
+      "used_pct": 88,
+      "staff_on_shift": 61,
+      "inbound_today": 540,
+      "outbound_today": 612,
+      "inventory": [
+        { "name": "Electronics",        "units": 9800, "pct": 92 },
+        { "name": "Textiles & apparel", "units": 12400,"pct": 88 },
+        { "name": "Packaged food",      "units": 5600, "pct": 79 },
+        { "name": "General merchandise","units": 8900, "pct": 85 }
+      ]
+    },
+    {
+      "id": "WH-DEL",
+      "name": "Delhi NCR Cross-dock",
+      "location": "Okhla Industrial Area, DL",
+      "capacity_sqft": 72000,
+      "used_pct": 64,
+      "staff_on_shift": 47,
+      "inbound_today": 410,
+      "outbound_today": 398,
+      "inventory": [
+        { "name": "Electronics",        "units": 6200, "pct": 70 },
+        { "name": "Textiles & apparel", "units": 7100, "pct": 58 },
+        { "name": "Packaged food",      "units": 3300, "pct": 52 },
+        { "name": "General merchandise","units": 6400, "pct": 66 }
+      ]
+    },
+    {
+      "id": "WH-BLR",
+      "name": "Bengaluru South Warehouse",
+      "location": "Hoskote, KA",
+      "capacity_sqft": 60000,
+      "used_pct": 91,
+      "staff_on_shift": 52,
+      "inbound_today": 488,
+      "outbound_today": 503,
+      "inventory": [
+        { "name": "Electronics",        "units": 10200,"pct": 95 },
+        { "name": "Textiles & apparel", "units": 8600, "pct": 90 },
+        { "name": "Packaged food",      "units": 4100, "pct": 82 },
+        { "name": "General merchandise","units": 7700, "pct": 88 }
+      ]
+    }
+  ]
+}

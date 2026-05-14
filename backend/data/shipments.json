@@ -1,0 +1,192 @@
+{
+  "shipments": [
+    {
+      "id": "s001",
+      "tracking_number": "NW4471829203",
+      "status": "in_transit",
+      "status_label": "In transit",
+      "service": "Express",
+      "origin_city": "Surat, GJ",
+      "destination_city": "Bengaluru, KA",
+      "weight_kg": 4.2,
+      "package_type": "Small parcel",
+      "sender": "Cobalt Electronics",
+      "recipient": "Brightline Retail",
+      "estimated_delivery": "Tomorrow by 7:00 PM",
+      "current_location": "Pune sorting hub, MH",
+      "cost": 540,
+      "timeline": [
+        { "label": "Order placed",            "location": "Surat, GJ",          "timestamp": "Dec 06, 9:14 AM",  "done": true },
+        { "label": "Picked up",                "location": "Surat, GJ",          "timestamp": "Dec 06, 2:40 PM",  "done": true },
+        { "label": "At origin hub",            "location": "Surat hub, GJ",      "timestamp": "Dec 06, 8:05 PM",  "done": true },
+        { "label": "In transit",               "location": "Pune sorting hub, MH","timestamp": "Dec 07, 6:22 AM", "done": true },
+        { "label": "At destination hub",       "location": "Bengaluru hub, KA",  "timestamp": "Expected Dec 08",  "done": false },
+        { "label": "Out for delivery",         "location": "Bengaluru, KA",      "timestamp": "Expected Dec 08",  "done": false },
+        { "label": "Delivered",                "location": "Bengaluru, KA",      "timestamp": "Expected Dec 08",  "done": false }
+      ],
+      "route": [
+        { "label": "Surat",     "type": "origin",      "done": true },
+        { "label": "Pune",      "type": "hub",         "done": true },
+        { "label": "In transit","type": "transit",     "done": false },
+        { "label": "Bengaluru", "type": "destination", "done": false }
+      ]
+    },
+    {
+      "id": "s002",
+      "tracking_number": "NW2298104471",
+      "status": "out_for_delivery",
+      "status_label": "Out for delivery",
+      "service": "Standard",
+      "origin_city": "Mumbai, MH",
+      "destination_city": "Surat, GJ",
+      "weight_kg": 12.8,
+      "package_type": "Medium box",
+      "sender": "Forsythe Textiles",
+      "recipient": "You",
+      "estimated_delivery": "Today by 6:00 PM",
+      "current_location": "Out for delivery — Surat, GJ",
+      "cost": 380,
+      "timeline": [
+        { "label": "Order placed",      "location": "Mumbai, MH",     "timestamp": "Dec 04, 11:00 AM", "done": true },
+        { "label": "Picked up",         "location": "Mumbai, MH",     "timestamp": "Dec 04, 4:15 PM",  "done": true },
+        { "label": "At origin hub",     "location": "Mumbai hub, MH", "timestamp": "Dec 04, 9:30 PM",  "done": true },
+        { "label": "In transit",        "location": "Vapi checkpoint","timestamp": "Dec 05, 7:45 AM",  "done": true },
+        { "label": "At destination hub","location": "Surat hub, GJ",  "timestamp": "Dec 06, 6:10 AM",  "done": true },
+        { "label": "Out for delivery",  "location": "Surat, GJ",      "timestamp": "Today, 9:05 AM",   "done": true },
+        { "label": "Delivered",         "location": "Surat, GJ",      "timestamp": "Expected today",   "done": false }
+      ],
+      "route": [
+        { "label": "Mumbai",      "type": "origin",      "done": true },
+        { "label": "Surat hub",   "type": "hub",         "done": true },
+        { "label": "Out for del.","type": "transit",     "done": true },
+        { "label": "Surat",       "type": "destination", "done": false }
+      ]
+    },
+    {
+      "id": "s003",
+      "tracking_number": "NW8830271194",
+      "status": "delivered",
+      "status_label": "Delivered",
+      "service": "Express",
+      "origin_city": "Delhi, DL",
+      "destination_city": "Surat, GJ",
+      "weight_kg": 0.5,
+      "package_type": "Document envelope",
+      "sender": "Mason & Crowe Associates",
+      "recipient": "You",
+      "estimated_delivery": "Delivered Dec 05, 1:42 PM",
+      "current_location": "Delivered",
+      "cost": 220,
+      "pod": {
+        "delivered_at": "Dec 05, 1:42 PM",
+        "received_by": "Self",
+        "signature": true,
+        "location_note": "Handed to recipient at front desk"
+      },
+      "timeline": [
+        { "label": "Order placed",      "location": "Delhi, DL",      "timestamp": "Dec 04, 10:20 AM", "done": true },
+        { "label": "Picked up",         "location": "Delhi, DL",      "timestamp": "Dec 04, 1:00 PM",  "done": true },
+        { "label": "At origin hub",     "location": "Delhi hub, DL",  "timestamp": "Dec 04, 5:30 PM",  "done": true },
+        { "label": "In transit",        "location": "Air uplift",     "timestamp": "Dec 04, 11:15 PM", "done": true },
+        { "label": "At destination hub","location": "Surat hub, GJ",  "timestamp": "Dec 05, 8:00 AM",  "done": true },
+        { "label": "Out for delivery",  "location": "Surat, GJ",      "timestamp": "Dec 05, 10:30 AM", "done": true },
+        { "label": "Delivered",         "location": "Surat, GJ",      "timestamp": "Dec 05, 1:42 PM",  "done": true }
+      ],
+      "route": [
+        { "label": "Delhi",     "type": "origin",      "done": true },
+        { "label": "Surat hub", "type": "hub",         "done": true },
+        { "label": "Surat",     "type": "destination", "done": true }
+      ]
+    },
+    {
+      "id": "s004",
+      "tracking_number": "NW5562093388",
+      "status": "exception",
+      "status_label": "Delayed — weather",
+      "service": "Standard",
+      "origin_city": "Kolkata, WB",
+      "destination_city": "Surat, GJ",
+      "weight_kg": 8.0,
+      "package_type": "Medium box",
+      "sender": "Greenfield Foods",
+      "recipient": "You",
+      "estimated_delivery": "Revised: Dec 09 (was Dec 07)",
+      "current_location": "Nagpur sorting hub, MH — held",
+      "cost": 410,
+      "timeline": [
+        { "label": "Order placed",      "location": "Kolkata, WB",     "timestamp": "Dec 03, 3:00 PM",  "done": true },
+        { "label": "Picked up",         "location": "Kolkata, WB",     "timestamp": "Dec 03, 6:50 PM",  "done": true },
+        { "label": "At origin hub",     "location": "Kolkata hub, WB", "timestamp": "Dec 04, 1:20 AM",  "done": true },
+        { "label": "In transit",        "location": "Nagpur hub, MH",  "timestamp": "Dec 05, 9:10 PM",  "done": true },
+        { "label": "Delayed — weather", "location": "Nagpur hub, MH",  "timestamp": "Dec 06, 7:00 AM",  "done": true, "exception": true },
+        { "label": "At destination hub","location": "Surat hub, GJ",   "timestamp": "Revised Dec 09",   "done": false },
+        { "label": "Delivered",         "location": "Surat, GJ",       "timestamp": "Revised Dec 09",   "done": false }
+      ],
+      "route": [
+        { "label": "Kolkata",   "type": "origin",      "done": true },
+        { "label": "Nagpur",    "type": "hub",         "done": true, "exception": true },
+        { "label": "Surat hub", "type": "hub",         "done": false },
+        { "label": "Surat",     "type": "destination", "done": false }
+      ]
+    },
+    {
+      "id": "s005",
+      "tracking_number": "NW1107448820",
+      "status": "processing",
+      "status_label": "Processing at origin",
+      "service": "Freight",
+      "origin_city": "Surat, GJ",
+      "destination_city": "Chennai, TN",
+      "weight_kg": 240.0,
+      "package_type": "Palletised freight (3 pallets)",
+      "sender": "You",
+      "recipient": "Cobalt Electronics",
+      "estimated_delivery": "Dec 12 – Dec 14",
+      "current_location": "Surat freight terminal, GJ",
+      "cost": 6850,
+      "timeline": [
+        { "label": "Order placed",       "location": "Surat, GJ",          "timestamp": "Dec 07, 8:30 AM", "done": true },
+        { "label": "Awaiting pickup",    "location": "Surat, GJ",          "timestamp": "Scheduled Dec 08","done": false },
+        { "label": "At freight terminal","location": "Surat terminal, GJ", "timestamp": "Expected Dec 08", "done": false },
+        { "label": "In transit",         "location": "—",                  "timestamp": "Expected Dec 09", "done": false },
+        { "label": "Delivered",          "location": "Chennai, TN",        "timestamp": "Dec 12 – Dec 14", "done": false }
+      ],
+      "route": [
+        { "label": "Surat",    "type": "origin",      "done": true },
+        { "label": "Terminal", "type": "hub",         "done": false },
+        { "label": "Chennai",  "type": "destination", "done": false }
+      ]
+    },
+    {
+      "id": "s006",
+      "tracking_number": "NW9943100257",
+      "status": "customs",
+      "status_label": "In customs clearance",
+      "service": "International",
+      "origin_city": "Surat, GJ",
+      "destination_city": "Dubai, AE",
+      "weight_kg": 6.5,
+      "package_type": "Small parcel",
+      "sender": "You",
+      "recipient": "Al Habtoor Trading",
+      "estimated_delivery": "Dec 10 – Dec 11 (subject to customs)",
+      "current_location": "Dubai customs facility, AE",
+      "cost": 2980,
+      "timeline": [
+        { "label": "Order placed",         "location": "Surat, GJ",        "timestamp": "Dec 04, 2:00 PM",  "done": true },
+        { "label": "Picked up",            "location": "Surat, GJ",        "timestamp": "Dec 04, 5:30 PM",  "done": true },
+        { "label": "Export cleared",       "location": "Mumbai port, MH",  "timestamp": "Dec 05, 4:00 PM",  "done": true },
+        { "label": "In transit (air)",     "location": "Air uplift",       "timestamp": "Dec 06, 2:10 AM",  "done": true },
+        { "label": "In customs clearance", "location": "Dubai customs, AE","timestamp": "Dec 07, 11:00 AM", "done": true },
+        { "label": "Out for delivery",     "location": "Dubai, AE",        "timestamp": "Dec 10 – Dec 11",  "done": false },
+        { "label": "Delivered",            "location": "Dubai, AE",        "timestamp": "Dec 10 – Dec 11",  "done": false }
+      ],
+      "route": [
+        { "label": "Surat",   "type": "origin",      "done": true },
+        { "label": "Mumbai",  "type": "hub",         "done": true },
+        { "label": "Customs", "type": "hub",         "done": true },
+        { "label": "Dubai",   "type": "destination", "done": false }
+      ]
+    }
+  ]
+}

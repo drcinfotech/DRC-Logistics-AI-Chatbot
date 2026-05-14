@@ -1,0 +1,78 @@
+{
+  "services": [
+    {
+      "id": "same_day",
+      "name": "Same-Day",
+      "transit": "Within city · same day",
+      "base_rate": 90,
+      "per_kg": 28,
+      "max_weight_kg": 20,
+      "features": ["Within-city only", "Live courier tracking", "2-hour pickup window", "Delivery by 9 PM"],
+      "best_for": "Urgent local documents & parcels"
+    },
+    {
+      "id": "express",
+      "name": "Express",
+      "transit": "1–2 business days",
+      "base_rate": 140,
+      "per_kg": 46,
+      "max_weight_kg": 30,
+      "features": ["Priority air uplift", "Real-time tracking", "Delivery before 7 PM", "Free 1-attempt redelivery"],
+      "best_for": "Time-sensitive shipments across metros"
+    },
+    {
+      "id": "standard",
+      "name": "Standard",
+      "transit": "3–5 business days",
+      "base_rate": 80,
+      "per_kg": 22,
+      "max_weight_kg": 50,
+      "features": ["Surface network", "Tracking at each hub", "Most economical for parcels"],
+      "best_for": "Everyday non-urgent parcels"
+    },
+    {
+      "id": "freight",
+      "name": "Freight / LTL",
+      "transit": "5–8 business days",
+      "base_rate": 1200,
+      "per_kg": 14,
+      "max_weight_kg": 2000,
+      "features": ["Palletised & bulk goods", "Dock-to-dock", "Dedicated freight handlers", "Appointment delivery"],
+      "best_for": "Heavy or palletised B2B consignments"
+    },
+    {
+      "id": "international",
+      "name": "International",
+      "transit": "7–14 business days",
+      "base_rate": 850,
+      "per_kg": 320,
+      "max_weight_kg": 70,
+      "features": ["Customs documentation support", "Export clearance", "Duty & tax estimate", "End-to-end tracking"],
+      "best_for": "Cross-border shipments"
+    }
+  ],
+  "zones": [
+    { "name": "Intra-city",   "multiplier": 1.0, "examples": "Within Surat" },
+    { "name": "Regional",     "multiplier": 1.4, "examples": "Surat ↔ Mumbai / Ahmedabad" },
+    { "name": "National",     "multiplier": 1.9, "examples": "Surat ↔ Delhi / Bengaluru / Chennai" },
+    { "name": "Remote",       "multiplier": 2.6, "examples": "North-East, hill stations, islands" },
+    { "name": "International","multiplier": 4.5, "examples": "India ↔ overseas" }
+  ],
+  "prohibited_items": [
+    { "category": "Explosives & fireworks",      "note": "Crackers, detonators, blasting agents — fully banned on all networks." },
+    { "category": "Weapons & ammunition",        "note": "Firearms, ammunition, knives intended as weapons — not accepted." },
+    { "category": "Illegal drugs & narcotics",   "note": "Controlled substances of any kind — illegal to ship." },
+    { "category": "Flammable & compressed gas",  "note": "LPG cylinders, aerosols above limits, lighters in bulk — restricted dangerous goods." },
+    { "category": "Toxic & radioactive material","note": "Poisons, corrosives, radioactive isotopes — require specialist dangerous-goods carriers." },
+    { "category": "Currency & bullion",          "note": "Cash, gold/silver bullion — most networks prohibit; use insured value services." },
+    { "category": "Live animals",                "note": "Live animals & birds — not handled; use a specialist licensed service." },
+    { "category": "Wildlife & ivory products",   "note": "Endangered species products — banned under wildlife protection law." },
+    { "category": "Perishables (uninsulated)",   "note": "Unpacked perishables — accepted only with approved cold-chain packaging." },
+    { "category": "Lithium batteries (loose)",   "note": "Loose/damaged lithium cells — restricted; installed batteries within limits are allowed." }
+  ],
+  "address_book": [
+    { "id": "addr1", "label": "Home",        "name": "You",                  "line": "B-204, Riverside Residency, Adajan", "city": "Surat, GJ",   "pincode": "395009", "phone": "•••• ••8841", "default": true },
+    { "id": "addr2", "label": "Office",      "name": "You",                  "line": "Unit 12, Sapphire Business Park, Vesu","city": "Surat, GJ",   "pincode": "395007", "phone": "•••• ••8841", "default": false },
+    { "id": "addr3", "label": "Warehouse",   "name": "Cobalt Electronics",   "line": "Plot 47, Sachin GIDC",                "city": "Surat, GJ",   "pincode": "394230", "phone": "•••• ••2207", "default": false }
+  ]
+}

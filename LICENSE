@@ -1,6 +1,6 @@
 MIT License
 
-Copyright (c) 2026 DRC Infotech LLP
+Copyright (c) 2025 drcinfotech
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -19,3 +19,32 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+
+────────────────────────────────────────────────────────────────────────────
+
+ADDITIONAL LOGISTICS & TRANSPORTATION DISCLAIMER
+
+This software is provided as a technical demonstration of conversational AI
+patterns for logistics and transportation services. It is NOT:
+
+  • A licensed freight forwarder, courier, or carrier
+  • A customs broker or licensed dangerous-goods (DG) handler
+  • A real shipment-tracking or fleet-management system
+  • A substitute for professional logistics, customs, or compliance advice
+
+The included data (shipments, tracking numbers, fleet vehicles, warehouses,
+routes, rates, customs figures) is entirely fictional. Names of carriers,
+hubs, client companies, and locations are invented for demonstration
+purposes. Tracking numbers do not correspond to any real shipment.
+
+The shipment-screening logic (prohibited goods, dangerous goods, customs
+misdeclaration detection) is a best-effort demonstration and is NOT a
+substitute for proper regulatory compliance. Shipping dangerous or
+prohibited goods is governed by national and international law (IATA DGR,
+IMDG Code, national customs and transport regulations). Always consult a
+certified dangerous-goods specialist and the relevant authorities.
+
+Do not deploy this software to handle real shipments, real customer data,
+real fleet operations, or real customs declarations without substantial
+modification, professional audit, and compliance with all applicable
+regulations.
