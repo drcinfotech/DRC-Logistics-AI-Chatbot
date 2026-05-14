@@ -1,8 +1,8 @@
-# 🚚 Routara — Logistics & Transportation AI Chatbot
+# 🚚 DRC — Logistics & Transportation AI Chatbot
 
 A production-grade, conversational AI demo for the logistics and transportation industry. Built with **Python + FastAPI** on the backend and **React + Vite + Tailwind** on the frontend, with a **shipment-screening-first** architecture and rich response blocks for tracking, quotes, pickups, fleet, warehouse operations, customs, and claims.
 
-> ⚠️ **Demo only.** Routara is not a licensed carrier, freight forwarder, or customs broker, and does not move real shipments. All shipments, tracking numbers, fleet vehicles, warehouses, routes, and rates are fictional.
+> ⚠️ **Demo only.** DRC — Logistics & Transportation AI Chatbot is not a licensed carrier, freight forwarder, or customs broker, and does not move real shipments. All shipments, tracking numbers, fleet vehicles, warehouses, routes, and rates are fictional.
 
 ![CI](https://img.shields.io/github/actions/workflow/status/drcinfotech/Logistics-AI-Chatbot/ci.yml?branch=main&label=tests)
 ![Python](https://img.shields.io/badge/python-3.10%20%7C%203.11%20%7C%203.12-3776AB?logo=python&logoColor=white)
@@ -231,7 +231,7 @@ This is a **demonstration project**. It is not production-ready logistics softwa
 
 **Specifically:**
 
-- 🚫 **Not a licensed carrier or freight forwarder.** Routara does not move, store, or deliver anything.
+- 🚫 **Not a licensed carrier or freight forwarder.** DRC — Logistics & Transportation AI Chatbot does not move, store, or deliver anything.
 - 🚫 **Not a customs broker.** Customs figures are rough illustrative estimates. The destination customs authority sets final duties and taxes based on HS codes, trade agreements, and declared value.
 - 🚫 **Not a dangerous-goods authority.** The shipment-screening logic is best-effort pattern matching. Shipping dangerous or prohibited goods is governed by law (IATA DGR, IMDG Code, national regulations). Always consult a certified DG specialist.
 - 🚫 **No real authentication.** The session model is in-memory and does not enforce identity. Real logistics systems require proper account authentication before exposing shipment data.
